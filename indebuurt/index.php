@@ -11,7 +11,7 @@
 
     <?php
     wp_nav_menu([
-        'menu_class'     => 'main-menu',
+        'menu_class' => 'main-menu',
         'container' => FALSE,
         'items_wrap' => '<ul id="%1$s" class="%2$s" tabindex="0">%3$s</ul>',
       ]);
@@ -27,6 +27,8 @@
     }
     ?>
     </main>
+
+    <?php echo file_get_contents(get_template_directory() . '/illustration.svg'); ?>
 
     <?php wp_footer(); ?>
 
