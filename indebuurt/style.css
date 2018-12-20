@@ -4,5 +4,173 @@ Author: Daniel Beeke
 Description: Awesomesauce
 Version: 0.0.1
 */
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+.st1 {
+  fill: #f39770; }
+
+.st2 {
+  fill: #9c1b50; }
+
+.st3 {
+  fill: #b8d8c5; }
+
+.st4 {
+  fill: #fcdfd0; }
+
+.st5 {
+  fill: #e7431f; }
+
+.st6 {
+  fill: #154410; }
+
+.st7 {
+  fill: #ffffff; }
+
+.st8 {
+  fill: #88303a; }
+
+.st9 {
+  fill: #70706f; }
+
+.st10 {
+  fill: #f0cc3f; }
+
+.st11 {
+  fill: #202b4f; }
+
+.st12 {
+  fill: #ffd657; }
+
+.st13 {
+  fill: none;
+  stroke-width: 2;
+  stroke: #e94840; }
+
+.st14 {
+  fill: #50b373; }
+
+.st15 {
+  fill: none;
+  stroke-linejoin: round;
+  stroke: #fff; }
+
+.st16 {
+  fill: #315941; }
+
+.st17 {
+  fill: #be8931; }
+
+.st18 {
+  fill: #735b34; }
+
+.st19 {
+  fill: #8b7553; }
+
+.st20 {
+  fill: #ffed00; }
+
 body {
-  background-color: red; }
+  background-color: #faf6d0;
+  -webkit-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out; }
+  body .stars {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; }
+  body .sun {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; }
+  body .base {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+    transition: -webkit-filter 1s ease-in-out;
+    -o-transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out; }
+
+body.night {
+  background-color: #202B4F; }
+  body.night .sun {
+    opacity: 0; }
+  body.night .stars {
+    opacity: 1; }
+  body.night .base {
+    -webkit-filter: saturate(70%);
+    filter: saturate(70%); }
+
+.main-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  margin: 0;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .main-menu .menu-item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    list-style: none;
+    margin: 10px 20px; }
+    .main-menu .menu-item a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #202b4f; }
+      .main-menu .menu-item a:before {
+        display: inline-block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #202b4f;
+        margin-right: 10px;
+        -webkit-transition: background-color .3s ease-in-out;
+        -o-transition: background-color .3s ease-in-out;
+        transition: background-color .3s ease-in-out; }
+    .main-menu .menu-item:hover a:before, .main-menu .menu-item.current-menu-item a:before {
+      background-color: #202b4f; }
+
+.page {
+  width: 400px;
+  max-width: -webkit-calc(100vw - 80px);
+  max-width: calc(100vw - 80px);
+  margin-left: 40px;
+  background-color: rgba(250, 246, 208, 0.4);
+  z-index: 2;
+  position: relative; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 18px;
+  line-height: 22px; }
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: 'Questrial', sans-serif; }
+
+.illustration {
+  margin-top: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }

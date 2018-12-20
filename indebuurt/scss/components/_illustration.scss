@@ -1,0 +1,56 @@
+.st1 { fill: #f39770; }
+.st2 { fill: #9c1b50; }
+.st3 { fill: #b8d8c5; }
+.st4 { fill: #fcdfd0; }
+.st5 { fill: #e7431f; }
+.st6 { fill: #154410; }
+.st7 { fill: #ffffff; }
+.st8 { fill: #88303a; }
+.st9 { fill: #70706f; }
+.st10 { fill: #f0cc3f; }
+.st11 { fill: #202b4f; }
+.st12 { fill: #ffd657; }
+.st13 { fill: none; stroke-width: 2; stroke: #e94840; }
+.st14 { fill: #50b373; }
+.st15 { fill: none; stroke-linejoin: round; stroke: #fff; }
+.st16 { fill: #315941; }
+.st17 { fill: #be8931; }
+.st18 { fill: #735b34; }
+.st19 { fill: #8b7553; }
+.st20 { fill: #ffed00; }
+
+body {
+  background-color: #faf6d0;
+  transition: background-color $speed ease-in-out;
+
+  .stars {
+    opacity: 0;
+    transition: opacity $speed ease-in-out;
+  }
+
+  .sun {
+    opacity: 1;
+    transition: opacity $speed ease-in-out;
+  }
+
+  .base {
+    filter: saturate(100%);
+    transition: filter $speed ease-in-out;
+  }
+}
+
+body.night {
+  background-color: #202B4F;
+
+  .sun {
+    opacity: 0;
+  }
+
+  .stars {
+    opacity: 1;
+  }
+
+  .base {
+    filter: saturate(70%);
+  }
+}

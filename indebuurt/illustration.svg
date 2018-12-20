@@ -1,33 +1,11 @@
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1280 700.2">
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1280 700.2" class="illustration" preserveAspectRatio="xMidYMax slice">
     <metadata/>
     <defs>
         <filter id="moon" x="-0.4" width="1.9" y="-0.4" height="1.8" color-interpolation-filters="sRGB">
             <feGaussianBlur stdDeviation="12.1"/>
         </filter>
-        <style>
-            .st1 { fill: #f39770; }
-            .st2 { fill: #9c1b50; }
-            .st3 { fill: #b8d8c5; }
-            .st4 { fill: #fcdfd0; }
-            .st5 { fill: #e7431f; }
-            .st6 { fill: #154410; }
-            .st7 { fill: #ffffff; }
-            .st8 { fill: #88303a; }
-            .st9 { fill: #70706f; }
-            .st10 { fill: #f0cc3f; }
-            .st11 { fill: #202b4f; }
-            .st12 { fill: #ffd657; }
-            .st13 { fill: none; stroke-width: 2; stroke: #e94840; }
-            .st14 { fill: #50b373; }
-            .st15 { fill: none; stroke-linejoin: round; stroke: #fff; }
-            .st16 { fill: #315941; }
-            .st17 { fill: #be8931; }
-            .st18 { fill: #735b34; }
-            .st19 { fill: #8b7553; }
-            .st20 { fill: #ffed00; }
-        </style>
     </defs>
-    <g>
+    <g class="base">
         <path d="m1204.2 397c0 0-67.4 1.5-98.9 8.4-58.8 12.7-117 25.4-175.6 42.4-65.4 19-123.5 27.1-190.4 27.2-69.8 0-136.8-39.1-204.9-32.7-124.2 11.7-245.5 114.5-370.1 112.9-42.7-0.5-82 32.4-122.7 56.4-13.2 7.8-28.2 22.7-41.4 19.1l0 69.4 1279.8 0 0-291.6a51.7 51.7 0 0 1-4 1.3c-7.4 1.9-17.3 4.7-24.4 5.2-19.2 1.2-47.4-18-47.4-18z"
               class="st3"/>
         <rect height="329.1" width="574.2" y="294.8" x="565.6" class="st4"/>
@@ -297,7 +275,7 @@
         <polygon transform="translate(0,-4.7929688e-6)" points="423.3 524.5 468.4 524.5 445.9 426 445.9 426 "
                  class="st16"/>
         <circle r="32.2" cy="590.9" cx="479.8" class="st14"/>
-        <circle r="58.4" cy="107.6" cx="540.8" class="st20"/>
+        <circle r="58.4" cy="107.6" cx="540.8" class="st20 sun"/>
     </g>
     <g class="stars">
         <g transform="translate(-3.4161414e-6,0.20001053)">
