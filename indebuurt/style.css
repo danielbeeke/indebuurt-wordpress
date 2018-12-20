@@ -6,74 +6,92 @@ Version: 0.0.1
 */
 @import url("https://fonts.googleapis.com/css?family=Questrial");
 .st1 {
-  fill: #f39770; }
-
-.st2 {
-  fill: #9c1b50; }
-
-.st3 {
-  fill: #b8d8c5; }
-
-.st4 {
-  fill: #fcdfd0; }
+  fill: var(--st1); }
 
 .st5 {
-  fill: #e7431f; }
-
-.st6 {
-  fill: #154410; }
-
-.st7 {
-  fill: #ffffff; }
-
-.st8 {
-  fill: #88303a; }
-
-.st9 {
-  fill: #70706f; }
-
-.st10 {
-  fill: #f0cc3f; }
-
-.st11 {
-  fill: #202b4f; }
-
-.st12 {
-  fill: #ffd657; }
+  fill: var(--st5); }
 
 .st13 {
   fill: none;
   stroke-width: 2;
-  stroke: #e94840; }
+  stroke: var(--st13); }
 
-.st14 {
-  fill: #50b373; }
+.st2 {
+  fill: var(--st2); }
+
+.st8 {
+  fill: var(--st8); }
+
+.st3 {
+  fill: var(--st3); }
+
+.st7 {
+  fill: var(--st7); }
 
 .st15 {
   fill: none;
   stroke-linejoin: round;
-  stroke: #fff; }
+  stroke: var(--st7); }
 
-.st16 {
-  fill: #315941; }
+.st4 {
+  fill: var(--st4); }
 
-.st17 {
-  fill: #be8931; }
+.st6 {
+  fill: var(--st6); }
 
-.st18 {
-  fill: #735b34; }
+.st11 {
+  fill: var(--st11); }
 
-.st19 {
-  fill: #8b7553; }
+.st9 {
+  fill: var(--st9); }
+
+.st12 {
+  fill: var(--st12); }
 
 .st20 {
-  fill: #ffed00; }
+  fill: var(--st20); }
+
+.st14 {
+  fill: var(--st14); }
+
+.st16 {
+  fill: var(--st16); }
+
+.st17 {
+  fill: var(--st17); }
+
+.st18 {
+  fill: var(--st18); }
+
+.st19 {
+  fill: var(--st19); }
 
 body {
-  background-color: #faf6d0;
+  --st1: #f39770;
+  --st5: #e7431f;
+  --st13: #e94840;
+  --st2: #9c1b50;
+  --st8: #88303a;
+  --st3: #b8d8c5;
+  --st7: #ffffff;
+  --st4: #fcdfd0;
+  --st6: #154410;
+  --st11: #202b4f;
+  --st9: #70706f;
+  --st12: #ffd657;
+  --st20: #ffed00;
+  --st14: #50b373;
+  --st16: #315941;
+  --st17: #be8931;
+  --st18: #735b34;
+  --st19: #8b7553;
+  --background: #faf6d0;
+  --color: #202b4f;
+  background-color: var(--background);
   -webkit-transition: background-color 1s ease-in-out;
   -o-transition: background-color 1s ease-in-out;
-  transition: background-color 1s ease-in-out; }
+  transition: background-color 1s ease-in-out;
+  color: var(--color); }
   body .stars {
     opacity: 0;
     -webkit-transition: opacity 1s ease-in-out;
@@ -94,7 +112,8 @@ body {
     transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out; }
 
 body.night {
-  background-color: #202B4F; }
+  --background: #202b4f;
+  --color: #faf6d0; }
   body.night .sun {
     opacity: 0; }
   body.night .stars {
@@ -113,18 +132,23 @@ body.night {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2; }
   .main-menu .menu-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     list-style: none;
-    margin: 10px 20px; }
+    margin: 10px 15px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
     .main-menu .menu-item a {
       text-transform: uppercase;
       text-decoration: none;
-      color: #202b4f; }
+      color: var(--color);
+      font-size: 16px; }
       .main-menu .menu-item a:before {
         display: inline-block;
         content: '';
@@ -132,29 +156,31 @@ body.night {
         height: 8px;
         -webkit-border-radius: 50%;
         border-radius: 50%;
-        border: 1px solid #202b4f;
+        border: 1px solid var(--color);
         margin-right: 10px;
         -webkit-transition: background-color .3s ease-in-out;
         -o-transition: background-color .3s ease-in-out;
         transition: background-color .3s ease-in-out; }
     .main-menu .menu-item:hover a:before, .main-menu .menu-item.current-menu-item a:before {
-      background-color: #202b4f; }
+      background-color: var(--color); }
 
 .page {
   width: 400px;
   max-width: -webkit-calc(100vw - 80px);
   max-width: calc(100vw - 80px);
   margin-left: 40px;
-  background-color: rgba(250, 246, 208, 0.4);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
   z-index: 2;
-  position: relative; }
+  position: relative;
+  margin-bottom: 30px; }
 
 html, body {
   padding: 0;
   margin: 0;
   height: 100%;
   font-size: 18px;
-  line-height: 22px; }
+  line-height: 1.4; }
 
 body {
   display: -webkit-box;
@@ -169,8 +195,16 @@ body {
   font-family: 'Questrial', sans-serif; }
 
 .illustration {
-  margin-top: auto;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }
+  width: 100%;
+  position: absolute;
+  height: 180%;
+  bottom: 0;
+  left: 0; }
+
+.illustration-wrapper {
+  padding-bottom: 30%;
+  position: relative;
+  margin-top: auto; }
+
+h1 {
+  font-size: 30px; }

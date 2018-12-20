@@ -113,7 +113,7 @@
         <rect height="24.6" width="36.4" y="324" x="960.1" class="st7"/>
         <rect height="24.6" width="36.4" y="324" x="1043.1" class="st7"/>
         <rect height="24.6" width="36.4" y="517.7" x="666.5" class="st7"/>
-        <path d="m711.7 335.5 0 0.4" class="st10"/>
+        <path d="m711.7 335.5 0 0.4" class="st12"/>
         <rect transform="matrix(0,1,-1,0,0,0)" height="36.7" width="21.4" y="-829.1" x="323.7"
               class="st11"/>
         <path d="m902 453.4c0 0 0.9 10.6 7.1 13.2l0 11.4 3.8 0 0-24.6zm-180.6 130.3c0 0 1.9 10.6 15.4 13.2l0 11.4 8.1 0 0-24.6zm9 0c0 0-1.9 10.6-15.4 13.2l0 11.4-8.1 0 0-24.6z"

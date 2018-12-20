@@ -28,7 +28,9 @@
     ?>
     </main>
 
-    <?php echo file_get_contents(get_template_directory() . '/illustration.svg'); ?>
+    <div class="illustration-wrapper">
+      <?php echo file_get_contents(get_template_directory() . '/illustration.svg'); ?>
+    </div>
 
     <?php wp_footer(); ?>
 
