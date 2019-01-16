@@ -1,0 +1,42 @@
+.menu-toggle {
+  position: absolute;
+  right: 20px;
+  z-index: 30;
+  top: 22px;
+  cursor: pointer;
+
+  .bar {
+    width: 22px;
+    height: 2px;
+    transition: all .3s ease-in-out;
+    background-color: var(--color);
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  .bar + .bar {
+    margin-top: 5px;
+  }
+}
+
+@media all and(min-width: 720px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.has-mobile-menu-expanded {
+  .menu-toggle {
+    .bar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}

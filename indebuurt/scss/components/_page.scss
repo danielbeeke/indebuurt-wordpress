@@ -1,10 +1,8 @@
 .page {
-  width: 400px;
-  max-width: calc(100vw - 80px);
-  margin-left: 40px;
-  //background-color: rgba(#faf6d0, .7);
+  width: 100%;
+  max-width: 500px;
   border-radius: 20px;
   z-index: 2;
   position: relative;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }

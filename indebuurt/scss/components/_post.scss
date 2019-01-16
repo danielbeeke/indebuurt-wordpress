@@ -1,0 +1,19 @@
+.post {
+  width: 100%;
+  border-radius: 20px;
+  z-index: 2;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto 140px;
+}
+
+.wp-block-latest-posts__post-date {
+  color: var(--color);
+  opacity: .7;
+}
+
+.wp-block-latest-posts {
+  li {
+    margin-bottom: 30px;
+  }
+}

@@ -74,6 +74,10 @@ body.night {
   }
 
   .base {
-    filter: saturate(70%);
+    filter: saturate(40%);
   }
+}
+
+svg {
+  pointer-events: none;
 }

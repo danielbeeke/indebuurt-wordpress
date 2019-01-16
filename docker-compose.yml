@@ -21,6 +21,8 @@ services:
      restart: always
      volumes:
        - ./indebuurt:/var/www/html/wp-content/themes/indebuurt
+       - ./plugins:/var/www/html/wp-content/plugins
+       - ./languages:/var/www/html/wp-content/languages
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress

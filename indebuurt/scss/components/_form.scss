@@ -1,0 +1,27 @@
+textarea,
+input[type="email"],
+input[type="text"] {
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(white, .3);
+  border-bottom: 2px solid var(--color);
+  resize: vertical;
+  font-family: 'Work Sans', sans-serif;
+  color: var(--color);
+}
+
+input[type="submit"] {
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--color);
+  color: var(--background);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+label {
+  font-weight: 300;
+}
